@@ -1,0 +1,19 @@
+sudo yum install mod_wsgi
+
+
+sudo -i
+yum update -y
+yum install httpd -y
+yum install vim -y
+
+yum install centos-release-scl -y
+
+sudo yum install wget -y
+wget http://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm
+sudo rpm -ivh mysql-community-release-el7-5.noarch.rpm
+sudo yum install mysql-server -y
+sudo yum install mysql-devel -y
+sudo systemctl start mysqld
+
+
+systemctl start httpd.service

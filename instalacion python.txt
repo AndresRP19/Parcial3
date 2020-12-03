@@ -1,0 +1,16 @@
+sudo yum install centos-release-scl -y
+sudo yum install rh-python36 -y
+
+#para habilitar python 3 en centos
+
+scl enable rh-python36 bash
+
+#instalacion de django
+
+pip install django
+#instalacion de mysql
+pip install mysql
+
+#conexion hacia la base de datos
+
+pip install mysql-connector
